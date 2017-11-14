@@ -1,5 +1,26 @@
 {% extends "base.html" %}
 
+
+{% block searchBar %}
+    {% csrf_token %}
+        <form action="" method="POST">
+            <table style="border:0;width:100%">
+                <tr>
+                    <td style="width:70%">
+                        <input type="search" placeholder="search" name="search" id="search" value="입력하세요"
+                               autofocus style="padding-left:2px;">
+                    </td>
+                    <td>
+                        <button type="submit">검색</button>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+{% endblock searchBar %}
+
+
 {% block content %}
     <h2>test Django Applications</h2>
     <ul>

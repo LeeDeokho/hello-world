@@ -83,12 +83,14 @@
         <tr>
             <td style="width:15%;">
                 <div id="searchBar">
-                    {% block searchBar %} 검색창이 있어야함... SEARCH {% endblock %}
+                    {% block searchBar %} {% endblock%}
+{#                    {% extends "search_bar.html" %}#}
+
                 </div>
             </td>
             <td>
                 <div id="content">
-                    {% block content %}CON{% endblock %}
+                    {% block content %}CON{% endblock%}
                 </div>
             </td>
         </tr>
